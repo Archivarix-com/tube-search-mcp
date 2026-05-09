@@ -1,0 +1,57 @@
+{
+  "name": "tube-search-mcp",
+  "version": "1.0.2",
+  "description": "MCP server for Archivarix Tube Search — search archived YouTube videos via AI assistants",
+  "type": "module",
+  "bin": {
+    "tube-search-mcp": "dist/cli.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli.ts"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "youtube",
+    "archive",
+    "wayback-machine",
+    "tube-search",
+    "ai",
+    "claude",
+    "cursor",
+    "vscode"
+  ],
+  "author": "Archivarix <archivarix.com@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Archivarix-com/tube-search-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Archivarix-com/tube-search-mcp/issues"
+  },
+  "homepage": "https://tube.archivarix.net/guide/mcp",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.12.2",
+    "typescript": "^6.0.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
