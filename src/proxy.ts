@@ -20,7 +20,7 @@ export interface ProxyOptions {
 export async function startProxy({ apiKey, mcpUrl }: ProxyOptions): Promise<void> {
   // Connect to remote MCP server
   const remoteClient = new Client(
-    { name: 'tube-search-proxy', version: '1.0.3' },
+    { name: 'tube-search-proxy', version: '1.0.4' },
     { capabilities: {} },
   );
 
@@ -36,7 +36,7 @@ export async function startProxy({ apiKey, mcpUrl }: ProxyOptions): Promise<void
 
   // Create local stdio server that mirrors remote capabilities
   const localServer = new Server(
-    { name: 'tube-search', version: '1.0.3' },
+    { name: 'tube-search', version: '1.0.4' },
     {
       capabilities: {
         tools: serverCapabilities?.tools ? {} : undefined,

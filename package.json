@@ -1,7 +1,7 @@
 {
   "name": "tube-search-mcp",
-  "version": "1.0.3",
-  "mcpName": "io.github.archivarix-com/tube-search-mcp",
+  "version": "1.0.4",
+  "mcpName": "io.github.Archivarix-com/tube-search-mcp",
   "description": "MCP server for Archivarix Tube Search — search archived YouTube videos via AI assistants",
   "type": "module",
   "bin": {
