@@ -18,7 +18,7 @@ function parseArgs(): { apiKey: string; mcpUrl: string } {
       printHelp();
       process.exit(0);
     } else if (args[i] === '--version' || args[i] === '-v') {
-      console.error('tube-search-mcp v1.0.0');
+      console.error('tube-search-mcp v1.0.3');
       process.exit(0);
     }
   }

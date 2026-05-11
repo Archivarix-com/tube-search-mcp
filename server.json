@@ -1,0 +1,29 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.archivarix-com/tube-search-mcp",
+  "description": "Search archived YouTube videos including deleted, private, or region-blocked content.",
+  "repository": {
+    "url": "https://github.com/Archivarix-com/tube-search-mcp",
+    "source": "github"
+  },
+  "version": "1.0.3",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "tube-search-mcp",
+      "version": "1.0.3",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "description": "API key for Archivarix Tube Search. Obtain at https://tube.archivarix.net/profile (Plus tier or API tier required).",
+          "isRequired": true,
+          "format": "string",
+          "isSecret": true,
+          "name": "TUBE_API_KEY"
+        }
+      ]
+    }
+  ]
+}
